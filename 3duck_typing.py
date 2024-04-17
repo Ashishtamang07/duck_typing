@@ -12,11 +12,12 @@ class Person:
         
     def fly(self):
         print("iam flapping my arms ")
-        
+  
         
 def quack_and_fly(obj):
  #pythonic way , wasier to ask forgivness then permission
- 
+ # -insted of asking can we do it ? we try to do it,
+ # -if its work great if doesnt work then we catch error and handel it  
  
     try: 
         obj.quack()
@@ -24,7 +25,7 @@ def quack_and_fly(obj):
         obj.bark()
     except AttributeError as e:
         print(e)
-  
+
  
 d = Duck()
 quack_and_fly(d)
